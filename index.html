@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student Registrtion System">
+  <meta name="author" content="Ritik Saxena">
+  <title>Student Registrtion</title>
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+  <header id="header">
+    <h1 id="headingTitle">Student Registrtion System</h1>
+    <p>A student registration system is a software application designed to manage and streamline the process of
+      enrolling students in educational institutions. It automates tasks such as collecting student information,
+      and generating registration records.</p>
+  </header>
+  <main id="main">
+    <section id="formSection">
+      <h2>Please fill below form for registration</h2>
+
+      <form id="student-form" action="">
+        <fieldset>
+          <label class="label" for="studentName">Student Name:</label><br>
+          <input class="input" type="text" name="studentName" id="studentName" placeholder="Enter your name" required>
+          <br>
+          <br>
+          <label class="label" for="studentId">Student Id:</label><br>
+          <input class="input" type="number" name="studentId" id="studentId" placeholder="Enter your Id" required>
+          <br>
+          <br>
+          <label class="label" for="studentEmail">Email:</label><br>
+          <input class="input" type="email" name="studentEmail" id="studentEmail" placeholder="Enter your Email"
+            required>
+          <br>
+          <br>
+          <label class="label" for="studentContactNo">Contact No.:</label><br>
+          <input class="input" type="number" name="studentContactNo" id="studentContactNo"
+            placeholder="Enter your Contact No." required>
+          <br>
+          <br>
+          <button class="btn-submit" type="submit">Submit</button>
+        </fieldset>
+      </form>
+
+
+    </section>
+    <section id="studentRecordsSection">
+      <h2>List of registered students</h2>
+      <br>
+      <br>
+      <div class="scrollContent">
+
+        <table id="table">
+
+          <tr>
+            <th class="tableName" colspan="2">Name</th>
+            <th class="tableId" colspan="2">Id</th>
+            <th class="tableEmail" colspan="2">Email</th>
+            <th class="tableContact" colspan="2">Contact No.</th>
+            <th class="actions" colspan="4">Actions</th>
+
+          </tr>
+          <br>
+
+          <!-- Dummy student Records
+          <tr>
+            <td colspan="2">suresh</td>
+            <td colspan="2">suresh123</td>
+            <td colspan="2">suresh@gmail.com</td>
+            <td colspan="2">8299842798</td>
+            <td colspan="2"> <button class="edit" onclick="funcEdit(this)">Reset</button></td>
+            <td colspan="2"><button onclick="funcDel(this)">Delete</button></td>
+          </tr>
+
+          <tr>
+            <td colspan="2">Ramesh</td>
+            <td colspan="2">suresh123</td>
+            <td colspan="2">suresh@gmail.com</td>
+            <td colspan="2">8299842798</td>
+            <td colspan="2"> <button class="edit" onclick="funcEdit(this)">Reset</button></td>
+            <td colspan="2"><button onclick="funcDel(this)">Delete</button></td>
+          </tr> -->
+
+
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
